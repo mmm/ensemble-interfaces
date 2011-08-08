@@ -5,27 +5,27 @@ provides:
   field: database
   description:
   type: string
-  default: '<client service name>'
+  default: client service name
 - 
   field: user
   description:
   type: string
-  default: '<client service name>'
+  default: client service name
 - 
   field: password
   description:
   type: string
-  default: 
+  default: generated
 - 
   field: host
   description:
   type: string
-  default: '<client service name>'
+  default: mysql service hostname
 - 
   field: slave
   description:
   type: string
-  default: '<client service name>'
+  default: false
 accepts:
 - 
   field: ip
