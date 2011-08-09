@@ -1,6 +1,6 @@
 name: mysql
 description: This is my interface description
-provides:
+providing:
 - 
   field: database
   description:
@@ -26,7 +26,7 @@ provides:
   description:
   type: string
   default: false
-accepts:
+requiring:
 - 
   field: ip
   description:
