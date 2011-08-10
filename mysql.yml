@@ -1,35 +1,36 @@
 name: mysql
-description: This is my interface description
+description: |
+  should provide ALL PRIVILEGES credentials to a database which
+  the service has exclusive access, at the hostname provided
+  on port 3306 with the MySQL protocol.
 providing:
 - 
   field: database
-  description:
+  description: the database to access
   type: string
   default: client service name
 - 
   field: user
-  description:
+  description: the user to use for database access
   type: string
   default: client service name
 - 
   field: password
-  description:
+  description: the password to use for database access
   type: string
   default: generated
 - 
-  field: host
-  description:
+  field: hostname
+  description: the hostname for the mysql server
   type: string
   default: mysql service hostname
-- 
-  field: slave
-  description:
-  type: string
-  default: false
 requiring:
 - 
-  field: ip
-  description:
-  type: string
-  default: 
-  required: true
+  field: slave
+  description: needs to be set for the client to run 'show slave status'
+  if requirer wants to run 'show slave status' it should relation-set
+              slave=1
+
+  type: boolean
+  default: false
+  required: false

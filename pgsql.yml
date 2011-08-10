@@ -1,0 +1,35 @@
+name: pgsql
+description: This is my interface description
+providing:
+- 
+  field: database
+  description:
+  type: string
+  default: client service name
+- 
+  field: user
+  description:
+  type: string
+  default: client service name
+- 
+  field: password
+  description:
+  type: string
+  default: generated
+- 
+  field: host
+  description:
+  type: string
+  default: mysql service hostname
+- 
+  field: slave
+  description:
+  type: string
+  default: false
+requiring:
+- 
+  field: ip
+  description:
+  type: string
+  default: 
+  required: true
