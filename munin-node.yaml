@@ -1,0 +1,16 @@
+name: munin
+description: |
+  munin interface
+providing:
+- 
+  field: ip
+  description: the hostname for the munin server
+  type: string
+  default: exporting service hostname
+requiring:
+- 
+  field: ip
+  description: client ip address is needed for configuration and access control
+  type: string
+  default: 
+  required: true
