@@ -27,10 +27,7 @@ providing:
 requiring:
 - 
   field: slave
-  description: needs to be set for the client to run 'show slave status'
-  if requirer wants to run 'show slave status' it should relation-set
-              slave=1
-
+  description: needs to be set to 1 for the client to run 'show slave status'
   type: boolean
   default: false
   required: false
