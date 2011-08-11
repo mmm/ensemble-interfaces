@@ -18,15 +18,3 @@ providing:
   type: string
   default: client service name
 requiring:
-- 
-  field: host
-  description: the password to use for database access
-  type: string
-  default: generated
-  required: true
-- 
-  field: cookie
-  description: the hostname for the mysql server
-  type: string
-  default: mysql service hostname
-  required: true
