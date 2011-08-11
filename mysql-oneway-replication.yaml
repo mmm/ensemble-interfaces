@@ -1,0 +1,40 @@
+name: mysql-oneway-replication
+description: |
+  mysql-oneway-replication
+providing:
+- 
+  field: user
+  description: the user to use for database access
+  type: string
+  default: client service name
+- 
+  field: password
+  description: the password to use for database access
+  type: string
+  default: generated
+- 
+  field: hostname
+  description: the hostname for the mysql server
+  type: string
+  default: mysql service hostname
+- 
+  field: port
+  description: the port for the mysql server
+  type: string
+  default: client service name
+- 
+  field: dumpurl
+  description: the dump
+  type: string
+  default: '/snaps/<service name>'
+requiring:
+- 
+  field: hostname
+  description: the hostname for the mysql replication store
+  type: string
+  default: service hostname
+- 
+  field: ip
+  description: the hostname for the mysql replication store
+  type: string
+  default: service hostname
