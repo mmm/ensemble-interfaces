@@ -1,0 +1,32 @@
+name: rabbitmq
+description: |
+  rabbitmq
+    # Connecting clients should request a username and vhost.
+    #    # In reponse, we generate a password for new users,
+    #       # grant the user access on the default vhost "/",
+    #          # and tell it where to reach us.
+    #
+providing:
+- 
+  field: username
+  description: the database to access
+  type: string
+  default: client service name
+- 
+  field: vhost
+  description: the user to use for database access
+  type: string
+  default: client service name
+requiring:
+- 
+  field: host
+  description: the password to use for database access
+  type: string
+  default: generated
+  required: true
+- 
+  field: cookie
+  description: the hostname for the mysql server
+  type: string
+  default: mysql service hostname
+  required: true
