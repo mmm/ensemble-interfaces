@@ -1,0 +1,15 @@
+name: mongodb
+description: |
+  mongodb
+providing:
+- 
+  field: host
+  description: the hostname for the mysql server
+  type: string
+  default: mysql service hostname
+- 
+  field: port
+  description: the database to access
+  type: string
+  default: 27017
+requiring:
