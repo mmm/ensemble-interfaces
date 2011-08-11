@@ -1,0 +1,20 @@
+name: hadoop-master
+description: |
+  hadoop-master
+providing:
+- 
+  field: namenode
+  description: the namenode hostname
+  type: string
+  default: service hostname
+- 
+  field: jobtracker
+  description: the jobtracker hostname
+  type: string
+  default: service hostname
+- 
+  field: hdfsdatadir
+  description: the hdfs data directory
+  type: string
+  default: /var/lib/hadoop-0.20/dfs/data
+requiring:
