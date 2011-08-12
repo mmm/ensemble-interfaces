@@ -1,45 +1,39 @@
 interface: mysql-oneway-replication
 summary: |
-  mysql-oneway-replication
+  Interface to relate mysql services for traditional log based replication. Includes
+  an HTTP interface to download SQL dumps to start with. On receiving the hostname,
+  the server will create a snapshot of the database which includes master data, and
+  expose it via HTTP to the slave's IP.
 description: |
-  MySQL is a fast, stable and true multi-user, multi-threaded SQL database
-  server. SQL (Structured Query Language) is the most popular database query
-  language in the world. The main goals of MySQL are speed, robustness and
-  ease of use.
 providing:
 - 
   field: user
-  summary: the user to use for database access
+  summary: the user to use for slave access
   type: string
-  default: client service name
+  default:
 - 
   field: password
-  summary: the password to use for database access
+  summary: the password to use for slave access
   type: string
-  default: generated
+  default:
 - 
   field: hostname
-  summary: the hostname for the mysql server
+  summary: the hostname for the master server
   type: string
-  default: mysql service hostname
+  default: 
 - 
   field: port
-  summary: the port for the mysql server
-  type: string
-  default: client service name
+  summary: the TCP port for the master mysql service
+  type: int
+  default:
 - 
   field: dumpurl
-  summary: the dump
+  summary: path to sql dump file  to import before starting slave. Appended to hostname and accessible via HTTP.
   type: string
-  default: '/snaps/<service name>'
+  default:
 requiring:
 - 
   field: hostname
-  summary: the hostname for the mysql replication store
-  type: string
-  default: service hostname
-- 
-  field: ip
-  summary: the hostname for the mysql replication store
+  summary: the hostname to allow to replicate and grab snapshots
   type: string
   default: service hostname
