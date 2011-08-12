@@ -1,4 +1,4 @@
-name: jenkins-slave
+interface: jenkins-slave
 description: |
   jenkins-slave
 providing:

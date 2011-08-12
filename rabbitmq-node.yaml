@@ -1,4 +1,4 @@
-name: rabbitmq-node
+interface: rabbitmq-node
 description: |
   rabbitmq-node
 providing:

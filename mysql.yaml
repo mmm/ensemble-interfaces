@@ -1,4 +1,4 @@
-name: mysql
+interface: mysql
 description: |
   should provide ALL PRIVILEGES credentials to a database which
   the service has exclusive access, at the hostname provided

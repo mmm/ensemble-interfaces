@@ -1,4 +1,4 @@
-name: rabbitmq
+interface: rabbitmq
 description: |
   rabbitmq
     # Connecting clients should request a username and vhost.

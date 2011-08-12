@@ -1,4 +1,4 @@
-name: mount
+interface: mount
 description: |
   network and distributed filesystems provide this interface for a network
   shared volume

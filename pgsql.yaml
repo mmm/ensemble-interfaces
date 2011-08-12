@@ -1,4 +1,4 @@
-name: pgsql
+interface: pgsql
 description: |
   should provide access to a database which
   the service has exclusive access, at the hostname provided

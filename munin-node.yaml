@@ -1,4 +1,4 @@
-name: munin
+interface: munin
 description: |
   munin interface
 providing:

@@ -1,4 +1,4 @@
-name: hadoop-master
+interface: hadoop-master
 description: |
   hadoop-master
 providing:

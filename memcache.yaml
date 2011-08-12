@@ -1,4 +1,4 @@
-name: memcache
+interface: memcache
 description: |
   memcache service
 providing:
