@@ -1,17 +1,17 @@
 interface: rabbitmq-node
-description: |
+summary: |
   rabbitmq-node
 providing:
 requiring:
 - 
   field: host
-  description: the password to use for database access
+  summary: the password to use for database access
   type: string
   default: generated
   required: true
 - 
   field: cookie
-  description: the hostname for the mysql server
+  summary: the hostname for the mysql server
   type: string
   default: mysql service hostname
   required: true

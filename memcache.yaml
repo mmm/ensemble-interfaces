@@ -1,21 +1,35 @@
 interface: memcache
-description: |
+summary: |
   memcache service
+description: 
+  Danga Interactive developed memcached to enhance the speed of LiveJournal.com,
+  a site which was already doing 20 million+ dynamic page views per day for 1
+  million users with a bunch of webservers and a bunch of database servers.
+  memcached dropped the database load to almost nothing, yielding faster page
+  load times for users, better resource utilization, and faster access to the
+  databases on a memcache miss.
+
+  memcached optimizes specific high-load serving applications that are designed
+  to take advantage of its versatile no-locking memory access system. Clients
+  are available in several different programming languages, to suit the needs
+  of the specific application. Traditionally this has been used in mod_perl
+  apps to avoid storing large chunks of data in Apache memory, and to share
+  this burden across several machines.
 providing:
 - 
   field: hostname
-  description: the hostname for the memcache server
+  summary: the hostname for the memcache server
   type: string
   default: memcache service hostname
 - 
   field: port
-  description: the port for the memcache server
+  summary: the port for the memcache server
   type: string
   default: 11211
 requiring:
 - 
   field: hostname
-  description: client hostname is added to memcached_ips
+  summary: client hostname is added to memcached_ips
   type: string
   default: 
   required: true

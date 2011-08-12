@@ -1,32 +1,32 @@
 interface: mount
-description: |
+summary: |
   network and distributed filesystems provide this interface for a network
   shared volume
 providing:
 - 
   field: hostname
-  description: the hostname for the file server
+  summary: the hostname for the file server
   type: string
   default: exporting service hostname
 - 
   field: fstype
-  description: the filesystem type to mount
+  summary: the filesystem type to mount
   type: string
   default: 
 - 
   field: mountpoint
-  description: the volume mountpoint
+  summary: the volume mountpoint
   type: string
   default: 
 - 
   field: options
-  description: any options used when exporting the volume
+  summary: any options used when exporting the volume
   type: string
   default: 
 requiring:
 - 
   field: hostname
-  description: client hostname is added to exports file for access control
+  summary: client hostname is added to exports file for access control
   type: string
   default: 
   required: true

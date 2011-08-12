@@ -1,33 +1,33 @@
 interface: pgsql
-description: |
+summary: |
   should provide access to a database which
   the service has exclusive access, at the hostname provided
   on port 3306 with the MySQL protocol.
 providing:
 - 
   field: database
-  description: the database to access
+  summary: the database to access
   type: string
   default: client service name
 - 
   field: user
-  description: the user to access the database
+  summary: the user to access the database
   type: string
   default: client service name
 - 
   field: password
-  description: the password to access the database
+  summary: the password to access the database
   type: string
   default: generated
 - 
   field: host
-  description: the hostname for the pgsql server
+  summary: the hostname for the pgsql server
   type: string
   default: mysql service hostname
 requiring:
 - 
   field: ip
-  description: the client ip address gets added to the pg_hba to allow access to the database server
+  summary: the client ip address gets added to the pg_hba to allow access to the database server
   type: string
   default: 
   required: true

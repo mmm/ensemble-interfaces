@@ -1,15 +1,15 @@
 interface: mongodb
-description: |
+summary: |
   mongodb
 providing:
 - 
   field: host
-  description: the hostname for the mysql server
+  summary: the hostname for the mysql server
   type: string
   default: mysql service hostname
 - 
   field: port
-  description: the database to access
+  summary: the database to access
   type: string
   default: 27017
 requiring:

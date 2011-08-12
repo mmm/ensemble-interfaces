@@ -1,22 +1,26 @@
 interface: jenkins-slave
-description: |
+summary: |
   jenkins-slave
+description: |
+  Jenkins is a Continous Integration server supporting
+  flexible continous integration and deployment methodologies
+  and more.
 providing:
 - 
   field: slavehost
-  description: |
+  summary: |
     Set the slave hostname to match the ensemble unit
     in the jenkins master instance
   type: string
   default: derived from slave service name (with s,/,-,)
 - 
   field: executors
-  description: number of available jenkins executors
+  summary: number of available jenkins executors
   type: string
   default: number of processors available to the slave server
 - 
   field: labels
-  description: |
+  summary: |
     "labels are used by jenkins to control which builds run where; you 
     automagically get some if you don't specify OR you can set them manually for 
     a service"
@@ -25,7 +29,7 @@ providing:
 requiring:
 - 
   field: url
-  description: url for the master jenkins server
+  summary: url for the master jenkins server
   type: string
   default: 
   required: true

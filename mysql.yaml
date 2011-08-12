@@ -11,28 +11,28 @@ description: |
 providing:
 - 
   field: database
-  description: the database to access
+  summary: the database to access
   type: string
   default: client service name
 - 
   field: user
-  description: the user to use for database access
+  summary: the user to use for database access
   type: string
   default: client service name
 - 
   field: password
-  description: the password to use for database access
+  summary: the password to use for database access
   type: string
   default: generated
 - 
   field: hostname
-  description: the hostname for the mysql server
+  summary: the hostname for the mysql server
   type: string
   default: mysql service hostname
 requiring:
 - 
   field: slave
-  description: needs to be set to 1 for the client to run 'show slave status'
+  summary: needs to be set to 1 for the client to run 'show slave status'
   type: boolean
   default: false
   required: false

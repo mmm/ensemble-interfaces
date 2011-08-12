@@ -1,5 +1,5 @@
 interface: rabbitmq
-description: |
+summary: |
   rabbitmq
     # Connecting clients should request a username and vhost.
     #    # In reponse, we generate a password for new users,
@@ -9,12 +9,12 @@ description: |
 providing:
 - 
   field: username
-  description: the database to access
+  summary: the database to access
   type: string
   default: client service name
 - 
   field: vhost
-  description: the user to use for database access
+  summary: the user to use for database access
   type: string
   default: client service name
 requiring:
