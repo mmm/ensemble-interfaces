@@ -2,7 +2,7 @@ interface: pgsql
 summary: |
   should provide access to a database which
   the service has exclusive access, at the hostname provided
-  on port 3306 with the MySQL protocol.
+  on port 5432 with the PostgreSQL protocol.
 description: |
   PostgreSQL is a fully featured object-relational database management
   system.  It supports a large part of the SQL standard and is designed
