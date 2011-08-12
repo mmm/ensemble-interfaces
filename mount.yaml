@@ -2,6 +2,8 @@ interface: mount
 summary: |
   network and distributed filesystems provide this interface for a network
   shared volume
+description: |
+  Provides an NFS export for basic file storage.
 providing:
 - 
   field: hostname
