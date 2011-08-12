@@ -1,11 +1,13 @@
 interface: rabbitmq
 summary: |
-  rabbitmq
-    # Connecting clients should request a username and vhost.
-    #    # In reponse, we generate a password for new users,
-    #       # grant the user access on the default vhost "/",
-    #          # and tell it where to reach us.
-    #
+  Connecting clients should request a username and vhost.
+  In reponse, we generate a password for new users,
+  grant the user access on the default vhost "/",
+  and tell it where to reach us.
+description: |
+  RabbitMQ is an implementation of AMQP, the emerging standard for high
+  performance enterprise messaging. The RabbitMQ server is a robust and
+  scalable implementation of an AMQP broker.
 providing:
 - 
   field: username
