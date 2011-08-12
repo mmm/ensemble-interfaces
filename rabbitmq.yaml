@@ -11,12 +11,12 @@ description: |
 providing:
 - 
   field: username
-  summary: the database to access
+  summary: the username to access the rabbitmq service
   type: string
-  default: client service name
+  default: 
 - 
   field: vhost
-  summary: the user to use for database access
+  summary: the vhost to access
   type: string
-  default: client service name
+  default: "/"
 requiring:

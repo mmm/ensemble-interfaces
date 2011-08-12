@@ -15,12 +15,12 @@ description: |
 providing:
 - 
   field: host
-  summary: the hostname for the mysql server
+  summary: the hostname for the mongodb server
   type: string
-  default: mysql service hostname
+  default: mongodb service hostname
 - 
   field: port
-  summary: the database to access
+  summary: the port for the mongodb server
   type: string
   default: 27017
 requiring:

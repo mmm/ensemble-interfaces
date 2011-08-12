@@ -9,13 +9,13 @@ providing:
 requiring:
 - 
   field: host
-  summary: the password to use for database access
+  summary: the host to use for rabbitmq access
   type: string
-  default: generated
+  default: peer service hostname
   required: true
 - 
   field: cookie
-  summary: the hostname for the mysql server
+  summary: 
   type: string
-  default: mysql service hostname
+  default: generated
   required: true

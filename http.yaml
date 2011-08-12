@@ -1,15 +1,17 @@
 interface: website
 summary: |
   website interface
+description: |
+  website interface
 providing:
 - 
   field: hostname
-  summary: the server hostname
+  summary: the web server hostname
   type: string
   default: exporting service hostname
 - 
   field: port
-  summary: the server port
+  summary: the web server port
   type: string
   default: 80
 requiring:
