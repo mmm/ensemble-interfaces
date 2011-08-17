@@ -27,7 +27,7 @@ providing:
   default: 
 requiring:
 - 
-  field: hostname
+  field: client
   summary: client hostname is added to exports file for access control
   type: string
   default: 
