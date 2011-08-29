@@ -1,32 +1,32 @@
 interface: mount
 summary: |
-The mount interface is used by network and distributed filesystems.
+  The mount interface is used by network and distributed filesystems.
 
-This specifies parameters used and exposed to clients attempting to mount network shares.
+  This specifies parameters used and exposed to clients attempting to mount network shares.
 description: |
-This provides an interface to mount an exported filesystem for basic distributed file storage using a client/server paradigm.
+  This provides an interface to mount an exported filesystem for basic distributed file storage using a client/server paradigm.
 
-Clients wishing to connect will need to provide a hostname or IP address to the server.
+  Clients wishing to connect will need to provide a hostname or IP address to the server.
 
-An example 'relation-joined' hook:
-{{{
-    #!/bin/bash
-    relation-set hostname=`hostname -f`
-}}}
-Clients then receive information about the export/share to be mounted.
+  An example 'relation-joined' hook:
+  {{{
+      #!/bin/bash
+      relation-set hostname=`hostname -f`
+  }}}
+  Clients then receive information about the export/share to be mounted.
 
-The filesystem share can be mounted from a 'relation-changed' hook that includes:
-{{{
-    #!/bin/bash
-    ...
-    fileshare_server=`relation-get hostname`
-    fileshare_fstype=`relation-get fstype`
-    fileshare_mountpoint=`relation-get mountpoint`
-    fileshare_options=`relation-get options`
-    ...
-    # mount logic goes here
-    ...
-}}}
+  The filesystem share can be mounted from a 'relation-changed' hook that includes:
+  {{{
+      #!/bin/bash
+      ...
+      fileshare_server=`relation-get hostname`
+      fileshare_fstype=`relation-get fstype`
+      fileshare_mountpoint=`relation-get mountpoint`
+      fileshare_options=`relation-get options`
+      ...
+      # mount logic goes here
+      ...
+  }}}
 providing:
 - 
   field: hostname
